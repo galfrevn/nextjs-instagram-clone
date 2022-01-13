@@ -47,8 +47,9 @@ function Header() {
 
         {/* Right */}
         <div className="flex items-center justify-end space-x-4">
+        <Link href="/" >
           <HomeIcon className="navBtn" />
-
+        </Link>
           <div className="relative navBtn">
             <ChatAltIcon className="navBtn" />
             <div className="absolute -top-2 -right-2.5 text-white text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center animate-pulse">

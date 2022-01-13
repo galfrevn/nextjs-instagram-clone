@@ -15,7 +15,7 @@ function Suggestions() {
       {dummyData.map((profile) => (
         <div
           key={profile.id}
-          className="flex items-center justify-between mt-3"
+          className="flex items-center justify-between mt-3 cursor-pointer"
         >
           <img
             src={profile.avatar}

@@ -32,28 +32,30 @@ export default function ProfileIcon() {
         >
           <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white divide-y divide-gray-100 rounded-sm shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "bg-gray-50" : "text-gray-900"
-                    } group flex items-center w-full px-2 py-2 text-xs`}
-                  >
-                    {active ? (
-                      <UserCircleIcon
-                        className="w-5 h-5 mr-2.5"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <UserCircleIcon
-                        className="w-5 h-5 mr-2.5"
-                        aria-hidden="true"
-                      />
-                    )}
-                    Edit
-                  </button>
-                )}
-              </Menu.Item>
+              <Link href="/profile/galfre.v">
+                <Menu.Item>
+                  {({ active }) => (
+                    <button
+                      className={`${
+                        active ? "bg-gray-50" : "text-gray-900"
+                      } group flex items-center w-full px-2 py-2 text-xs`}
+                    >
+                      {active ? (
+                        <UserCircleIcon
+                          className="w-5 h-5 mr-2.5"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <UserCircleIcon
+                          className="w-5 h-5 mr-2.5"
+                          aria-hidden="true"
+                        />
+                      )}
+                      Edit
+                    </button>
+                  )}
+                </Menu.Item>
+              </Link>
               <Menu.Item>
                 {({ active }) => (
                   <button
@@ -117,9 +119,9 @@ export default function ProfileIcon() {
             </div>
 
             <div className="">
-              <Menu.Item>
-                {({ active }) => (
-                  <Link href="/login">
+              <Link href="/login">
+                <Menu.Item>
+                  {({ active }) => (
                     <button
                       className={`${
                         active ? "bg-gray-50" : "text-gray-900"
@@ -127,9 +129,9 @@ export default function ProfileIcon() {
                     >
                       Log out
                     </button>
-                  </Link>
-                )}
-              </Menu.Item>
+                  )}
+                </Menu.Item>
+              </Link>
             </div>
           </Menu.Items>
         </Transition>

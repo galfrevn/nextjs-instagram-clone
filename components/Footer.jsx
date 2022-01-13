@@ -2,7 +2,7 @@ import { ChevronUpIcon } from "@heroicons/react/outline";
 
 function Footer() {
   return (
-    <div className="w-screen h-14 flex text-center justify-center items-center mb-10 text-sm text-gray-400" >
+    <div className="w-screen h-14 flex text-center justify-center items-center mb-10 mt-24 text-sm text-gray-400" >
       <div className="">
         <ul className="flex space-x-5">
           <li>
@@ -47,7 +47,7 @@ function Footer() {
             <p className="mt-4">English (UK) </p>
             <ChevronUpIcon className="w-4 h-4 ml-2 transform translate-y-2" />
             <p className="transform translate-y-2 ml-5">
-              © 2022 Instagram from Meta
+              © 2022 Instagram clone by Valentin Galfre
             </p>
           </div>
         </div>

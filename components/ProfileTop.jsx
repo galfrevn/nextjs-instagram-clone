@@ -9,7 +9,7 @@ function ProfileTop() {
             <img
               src="https://yt3.ggpht.com/ytc/AKedOLTT7rvwoyRkEkSKmjmL82frX25GBITtG3QlA43L5Ck=s800-c-k-c0x00ffffff-no-rj"
               alt=""
-              className="w-20 h-20 rounded-full border p-[2px] cursor-pointer lg:w-48 lg:h-48"
+              className="w-24 h-24 rounded-full border p-[5px] lg:w-48 lg:h-48"
             />
           </div>
 

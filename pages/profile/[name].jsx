@@ -3,24 +3,25 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import ProfileTop from '../../components/ProfileTop'
 import ProfileGrid from '../../components/ProfileGrid';
+import ProfileStories from '../../components/ProfileStories'
 
-function profile({ name = "galfre.v" }) {
+function profile() {
   return (
-    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
+    <div className="bg-gray-50 h-screen overflow-y-scroll overflow-x-hidden scrollbar-hide">
 
       <Head>
-        <title> {name} | Instagram Clone</title>
+        <title> galfre.v | Instagram Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Header />
 
       <ProfileTop />
-
-      <hr className="mx-4 mt-5 lg:mt-12" />
-
+      <ProfileStories />
+      <hr className="mx-4 mt-5 lg:mt-5" />
       <ProfileGrid />
 
+      <Footer />
       
 
     </div>
